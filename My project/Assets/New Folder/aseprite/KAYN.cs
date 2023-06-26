@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KAYN : MonoBehaviour
+public class кейн : MonoBehaviour
 {
     public float speed;
     private Vector2 direction;
     public Rigidbody2D rb;
+    
 
     void Start()
     {
@@ -22,5 +23,6 @@ public class KAYN : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
-     }
+        
+    }
 }
